@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by
+Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="mirte_master" xmlns:xacro="http://ros.org/wiki/xacro">
+    <link name="base_link" />
+
     <link
         name="arm_Rot">
         <inertial>
@@ -22,7 +29,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/arm_Rot.STL" />
+                    filename="package://mirte_arm_description/meshes/arm_Rot.STL" />
             </geometry>
             <material
                 name="">
@@ -36,7 +43,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/arm_Rot.STL" />
+                    filename="package://mirte_arm_description/meshes/arm_Rot.STL" />
             </geometry>
         </collision>
     </link>
@@ -47,14 +54,14 @@
             xyz="0 -0.079274 0.06"
             rpy="1.5708 0 3.1416" />
         <parent
-            link="frame_link" />
+            link="base_link" />
         <child
             link="arm_Rot" />
         <axis
             xyz="0 1 0" />
         <limit
-            lower="${pi/-2}"
-            upper="${pi/2}"
+            lower="-1.5707"
+            upper="1.5707"
             effort="2"
             velocity="2"
         />
@@ -81,7 +88,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/arm_Shoulder.STL" />
+                    filename="package://mirte_arm_description/meshes/arm_Shoulder.STL" />
             </geometry>
             <material
                 name="">
@@ -95,7 +102,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/arm_Shoulder.STL" />
+                    filename="package://mirte_arm_description/meshes/arm_Shoulder.STL" />
             </geometry>
         </collision>
     </link>
@@ -112,8 +119,8 @@
         <axis
             xyz="0 1 0" />
         <limit
-            lower="${pi/-2}"
-            upper="${pi/2}"
+            lower="-1.5707"
+            upper="1.5707"
             effort="2"
             velocity="2"
         />
@@ -140,7 +147,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/arm_Elbow.STL" />
+                    filename="package://mirte_arm_description/meshes/arm_Elbow.STL" />
             </geometry>
             <material
                 name="">
@@ -154,7 +161,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/arm_Elbow.STL" />
+                    filename="package://mirte_arm_description/meshes/arm_Elbow.STL" />
             </geometry>
         </collision>
     </link>
@@ -171,8 +178,8 @@
         <axis
             xyz="1 0 0" />
         <limit
-            lower="${pi/-2}"
-            upper="${pi/2}"
+            lower="-1.5707"
+            upper="1.5707"
             effort="2"
             velocity="2"
         />
@@ -199,7 +206,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/arm_Wrist.STL" />
+                    filename="package://mirte_arm_description/meshes/arm_Wrist.STL" />
             </geometry>
             <material
                 name="">
@@ -213,7 +220,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/arm_Wrist.STL" />
+                    filename="package://mirte_arm_description/meshes/arm_Wrist.STL" />
             </geometry>
         </collision>
     </link>
@@ -230,8 +237,8 @@
         <axis
             xyz="0 1 0" />
         <limit
-            lower="${pi/-2}"
-            upper="${pi/2}"
+            lower="-1.5707"
+            upper="1.5707"
             effort="2"
             velocity="2"
         />
@@ -258,7 +265,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/Gripper.STL" />
+                    filename="package://mirte_arm_description/meshes/Gripper.STL" />
             </geometry>
             <material
                 name="">
@@ -272,7 +279,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/Gripper.STL" />
+                    filename="package://mirte_arm_description/meshes/Gripper.STL" />
             </geometry>
         </collision>
     </link>
@@ -290,7 +297,7 @@
             xyz="0 -1 0" />
         <limit
             lower="0"
-            upper="${pi/2}"
+            upper="1.5707"
             effort="2"
             velocity="2"
         />
@@ -317,7 +324,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/_gripper_link_r.STL" />
+                    filename="package://mirte_arm_description/meshes/_gripper_link_r.STL" />
             </geometry>
             <material
                 name="">
@@ -331,7 +338,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/_gripper_link_r.STL" />
+                    filename="package://mirte_arm_description/meshes/_gripper_link_r.STL" />
             </geometry>
         </collision>
     </link>
@@ -375,7 +382,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/gripper_finger_r.STL" />
+                    filename="package://mirte_arm_description/meshes/gripper_finger_r.STL" />
             </geometry>
             <material
                 name="">
@@ -389,7 +396,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/gripper_finger_r.STL" />
+                    filename="package://mirte_arm_description/meshes/gripper_finger_r.STL" />
             </geometry>
         </collision>
     </link>
@@ -433,7 +440,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/_gripper_link_l.STL" />
+                    filename="package://mirte_arm_description/meshes/_gripper_link_l.STL" />
             </geometry>
             <material
                 name="">
@@ -447,7 +454,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/_gripper_link_l.STL" />
+                    filename="package://mirte_arm_description/meshes/_gripper_link_l.STL" />
             </geometry>
         </collision>
     </link>
@@ -491,7 +498,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/gripper_finger_l.STL" />
+                    filename="package://mirte_arm_description/meshes/gripper_finger_l.STL" />
             </geometry>
             <material
                 name="">
@@ -505,7 +512,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/gripper_finger_l.STL" />
+                    filename="package://mirte_arm_description/meshes/gripper_finger_l.STL" />
             </geometry>
         </collision>
     </link>
@@ -549,7 +556,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/_Gripper_r.STL" />
+                    filename="package://mirte_arm_description/meshes/_Gripper_r.STL" />
             </geometry>
             <material
                 name="">
@@ -563,7 +570,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://mirte_master_description/meshes/_Gripper_r.STL" />
+                    filename="package://mirte_arm_description/meshes/_Gripper_r.STL" />
             </geometry>
         </collision>
     </link>
