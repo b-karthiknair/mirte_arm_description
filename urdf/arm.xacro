@@ -111,7 +111,7 @@ Stephen Brawner (brawner@gmail.com)
         type="revolute">
         <origin
             xyz="0 0.0281 -0.00625"
-            rpy="3.1416 0 1.5708" />
+            rpy="3.1416 -0.1 1.5708" />
         <parent
             link="arm_Rot" />
         <child
@@ -170,7 +170,7 @@ Stephen Brawner (brawner@gmail.com)
         type="revolute">
         <origin
             xyz="0.1378 0 0"
-            rpy="-3.1416 0 1.5708" />
+            rpy="-3.2116 0 1.5708" />
         <parent
             link="arm_Shoulder" />
         <child

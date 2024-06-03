@@ -1,5 +1,5 @@
 <launch>
-    <arg name="model" default="$(find mirte_arm_description)/urdf/arm.urdf"/>
+    <arg name="model" default="$(find mirte_arm_description)/urdf/arm.xacro"/>
     <arg name="gui" default="True" />
     <arg name="rvizconfig" default="$(find mirte_arm_description)/rviz/arm.rviz" />
 
