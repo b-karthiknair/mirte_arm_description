@@ -6,11 +6,12 @@ Stephen Brawner (brawner@gmail.com)
 <robot
   name="mirte_arm" xmlns:xacro="http://ros.org/wiki/xacro">
     <link name="base_link" />
+
     <link
         name="arm_Rot">
         <inertial>
             <origin
-                xyz="0 0 0"
+                xyz="-1.27894101951934E-05 0.0208058767653727 0.00585680210359747"
                 rpy="0 0 0" />
             <mass
                 value="0.0689676051678483" />
@@ -50,7 +51,7 @@ Stephen Brawner (brawner@gmail.com)
         name="arm_Rot_joint"
         type="revolute">
         <origin
-            xyz="0 -0.079274 0.06"
+            xyz="0 0 0"
             rpy="1.5708 0 3.1416" />
         <parent
             link="base_link" />
@@ -59,8 +60,8 @@ Stephen Brawner (brawner@gmail.com)
         <axis
             xyz="0 1 0" />
         <limit
-            lower="-3.1416"
-            upper="3.1416"
+            lower="-1.5707"
+            upper="1.5707"
             effort="2"
             velocity="2"
         />
@@ -110,7 +111,7 @@ Stephen Brawner (brawner@gmail.com)
         type="revolute">
         <origin
             xyz="0 0.0281 -0.00625"
-            rpy="3.1416 -0.1 1.5708" />
+            rpy="3.1416 0 1.5708" />
         <parent
             link="arm_Rot" />
         <child
@@ -118,8 +119,8 @@ Stephen Brawner (brawner@gmail.com)
         <axis
             xyz="0 1 0" />
         <limit
-            lower="-3.1416"
-            upper="3.1416"
+            lower="-1.5707"
+            upper="1.5707"
             effort="2"
             velocity="2"
         />
@@ -169,7 +170,7 @@ Stephen Brawner (brawner@gmail.com)
         type="revolute">
         <origin
             xyz="0.1378 0 0"
-            rpy="-3.2116 0 1.5708" />
+            rpy="-3.1416 0 1.5708" />
         <parent
             link="arm_Shoulder" />
         <child
@@ -177,8 +178,8 @@ Stephen Brawner (brawner@gmail.com)
         <axis
             xyz="1 0 0" />
         <limit
-            lower="-3.1416"
-            upper="3.1416"
+            lower="-1.5707"
+            upper="1.5707"
             effort="2"
             velocity="2"
         />
@@ -236,8 +237,8 @@ Stephen Brawner (brawner@gmail.com)
         <axis
             xyz="0 1 0" />
         <limit
-            lower="-3.1416"
-            upper="3.1416"
+            lower="-1.5707"
+            upper="1.5707"
             effort="2"
             velocity="2"
         />
@@ -296,7 +297,7 @@ Stephen Brawner (brawner@gmail.com)
             xyz="0 -1 0" />
         <limit
             lower="0"
-            upper="3.1416"
+            upper="1.5707"
             effort="2"
             velocity="2"
         />
