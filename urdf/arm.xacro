@@ -6,12 +6,11 @@ Stephen Brawner (brawner@gmail.com)
 <robot
   name="mirte_arm" xmlns:xacro="http://ros.org/wiki/xacro">
     <link name="base_link" />
-
     <link
         name="arm_Rot">
         <inertial>
             <origin
-                xyz="-1.27894101951934E-05 0.0208058767653727 0.00585680210359747"
+                xyz="0 0 0"
                 rpy="0 0 0" />
             <mass
                 value="0.0689676051678483" />
@@ -60,8 +59,8 @@ Stephen Brawner (brawner@gmail.com)
         <axis
             xyz="0 1 0" />
         <limit
-            lower="-1.5707"
-            upper="1.5707"
+            lower="-3.1416"
+            upper="3.1416"
             effort="2"
             velocity="2"
         />
@@ -119,8 +118,8 @@ Stephen Brawner (brawner@gmail.com)
         <axis
             xyz="0 1 0" />
         <limit
-            lower="-1.5707"
-            upper="1.5707"
+            lower="-3.1416"
+            upper="3.1416"
             effort="2"
             velocity="2"
         />
@@ -178,8 +177,8 @@ Stephen Brawner (brawner@gmail.com)
         <axis
             xyz="1 0 0" />
         <limit
-            lower="-1.5707"
-            upper="1.5707"
+            lower="-3.1416"
+            upper="3.1416"
             effort="2"
             velocity="2"
         />
@@ -237,8 +236,8 @@ Stephen Brawner (brawner@gmail.com)
         <axis
             xyz="0 1 0" />
         <limit
-            lower="-1.5707"
-            upper="1.5707"
+            lower="-3.1416"
+            upper="3.1416"
             effort="2"
             velocity="2"
         />
@@ -297,7 +296,7 @@ Stephen Brawner (brawner@gmail.com)
             xyz="0 -1 0" />
         <limit
             lower="0"
-            upper="1.5707"
+            upper="3.1416"
             effort="2"
             velocity="2"
         />
